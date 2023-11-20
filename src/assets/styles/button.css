@@ -1,0 +1,13 @@
+.btn {
+  font-size: 20px;
+  color: var(--color-smoke);
+  background-color: var(--color-black);
+  border: none;
+  border-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #000;
+  transform: scale(1.25);
+}

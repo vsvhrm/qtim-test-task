@@ -1,0 +1,12 @@
+:root {
+  --color-black: #101010;
+  --color-silver: #e8e8e8;
+  --color-smoke: #f3f3f3;
+  --color-light: #fff;
+
+  --color-mauve: #e2beff;
+  --color-purple: #7941a7;
+
+  --color-text: var(--color-black);
+  --color-background: var(--color-light);
+}
