@@ -24,6 +24,12 @@ import { RouterView } from 'vue-router';
   flex-direction: column;
 }
 
+@media (max-width: 767px) {
+  .main {
+    padding: 1.5rem 3.5rem;
+  }
+}
+
 .main__title {
   margin-bottom: 60px;
   font-size: 84px;

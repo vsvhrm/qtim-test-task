@@ -38,10 +38,17 @@ fetch(url)
 
 <style>
 .main__articles {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
   justify-content: space-between;
   gap: 40px 32px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .main__articles {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
 }
 </style>

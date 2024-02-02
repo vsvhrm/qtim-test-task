@@ -19,12 +19,16 @@
         </ul>
       </nav>
       <div class="header__toolbar">
-        <button class="lang-select" aria-label="Select your language preference" type="button">
-          <svg class="lang-select__icon" width="24" height="24" aria-hidden="true">
+        <button
+          class="header__lang-select"
+          aria-label="Select your language preference"
+          type="button"
+        >
+          <svg class="header__icon" width="24" height="24" aria-hidden="true">
             <use href="@/assets/images/icons.svg#flag-uk"></use>
           </svg>
         </button>
-        <button class="header__btn-toolbar btn" type="button">Let’s work</button>
+        <button class="header__btn-toolbar btn" type="button">Let's work</button>
       </div>
     </div>
   </header>
@@ -60,7 +64,7 @@
   column-gap: 16px;
 }
 
-.lang-select {
+.header__lang-select {
   width: 52px;
   height: 52px;
   background-color: transparent;
@@ -68,7 +72,7 @@
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.lang-select__icon {
+.header__icon {
   margin: auto;
   display: block;
 }

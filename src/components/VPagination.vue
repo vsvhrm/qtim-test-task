@@ -51,11 +51,11 @@ watchEffect(() => {
   <nav class="pagination" aria-label="Pagination navigation">
     <a
       v-if="hasPrevPage"
-      @click.prevent="onClickPrev"
       :href="`${$route.path}?page=${currentPage - 1}`"
       class="pagination__link"
       aria-label="Previous page"
       rel="prev"
+      @click.prevent="onClickPrev"
     >
       <svg width="16" height="16" aria-hidden="true">
         <use href="@/assets/images/icons.svg#chevron-left"></use>
@@ -64,11 +64,11 @@ watchEffect(() => {
     <ol class="pagination__list">
       <li v-for="(page, index) of pages" :key="`${page}-${index}`" class="pagination__item">
         <a
-          @click.prevent="onClickPage(page)"
           :href="`${$route.path}?page=${page}`"
           class="pagination__link"
           :aria-label="`Page ${page}`"
           :aria-current="page === currentPage ? 'page' : undefined"
+          @click.prevent="onClickPage(page)"
         >
           {{ page }}
         </a>
@@ -76,11 +76,11 @@ watchEffect(() => {
     </ol>
     <a
       v-if="hasNextPage"
-      @click.prevent="onClickNext"
       :href="`${$route.path}?page=${currentPage + 1}`"
       class="pagination__link"
       aria-label="Next page"
       rel="next"
+      @click.prevent="onClickNext"
     >
       <svg width="16" height="16" aria-hidden="true">
         <use href="@/assets/images/icons.svg#chevron-right"></use>
@@ -109,7 +109,7 @@ watchEffect(() => {
   height: 44px;
   background-color: var(--color-smoke);
   border-radius: 12px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .pagination__link[aria-current] {
